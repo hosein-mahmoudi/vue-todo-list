@@ -1,0 +1,90 @@
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+    .todo-app {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #101a20;
+      min-height: 100vh;
+      padding: 1rem;
+      color: #e4edf5;
+    }
+
+    .task-box {
+      background: #142129;
+      border: 1px solid rgba(27, 29, 29, 0.12);
+      border: 1px solid color-mix(in srgb, #e7f2f7, transparent 88%);
+      backdrop-filter: blur(5px);
+      border-radius: 16px;
+      padding: 1px;
+      min-height: 150px;
+
+    }
+
+    .text-blue {
+      color: #1387c1;
+    }
+
+    .style-input {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 0.5rem;
+      color: #fff;
+      font-size: 1rem;
+      text-align: center;
+      padding: 0.5rem 0;
+
+    }
+
+    .style-input:focus {
+      outline: none;
+      /* حذف outline پیش‌فرض */
+      border: 1px solid #1387c1;
+      /* رنگ دلخواه */
+      box-shadow: 0 0 10px rgba(19, 135, 193, 0.6);
+      /* هاله سفارشی */
+    }
+
+    .btn:focus {
+      outline: none !important;
+      /* حذف outline در حالت focus */
+      box-shadow: none !important;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+      /* کمی کوچک می‌شود هنگام کلیک */
+      outline: none !important;
+      box-shadow: none !important;
+    }
+
+    .btn-responsive {
+      font-size: 0.875rem !important;
+      /* پیش‌فرض: شبیه sm */
+      padding: 0.25rem 0.5rem;
+    }
+
+    @media (min-width: 992px) {
+      .btn-responsive {
+        font-size: 1rem !important;
+        /* روی دسکتاپ بزرگ‌تر مثل md */
+        padding: 0.375rem 0.75rem;
+      }
+    }
+
+    .responsive-text {
+      font-size: 1rem;
+      /* موبایل */
+    }
+
+    @media (min-width: 768px) {
+      .responsive-text {
+        font-size: 1.1rem;
+        /* تبلت */
+      }
+    }
+
+    @media (min-width: 992px) {
+      .responsive-text {
+        font-size: 1.25rem;
+        /* دسکتاپ */
+      }
+    }
